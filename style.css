@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f6f6fa;
+  text-align: center;
+  padding: 30px 20px;
+  color: #292929;
+}
+
+.container {
+  max-width: 450px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+input, button {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+input {
+  border: 2px solid #ddd;
+  background: white;
+}
+
+button {
+  border: none;
+  background: #398df5;
+  color: white;
+  cursor: pointer;
+  
+  border-radius: 30px;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+
+  transition: background 0.2s, transform 0.1s;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button:focus-visible {
+  outline: 3px solid #9ac7ff;
+  outline-offset: 3px;
+}
+
+.bar {
+  height: 25px;
+  background: #e2e2e2;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-top: 25px;
+}
+
+#progress {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(
+  to right,
+  #4ADE80 0%,
+  #FDE047 50%,
+  #E87979 100%);
+  transition: width 0.8s;
+}
+
+#persen {
+  font-size: 20px;
+}
+
+#hasil {
+  font-size: 25px;
+  font-weight: bold;
+  color: #f0b900;
+  margin-top: 25px;
+}
+
+
+#meme {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 12px;
+}
+
+#meme[hidden] {
+  display: none;
+}
